@@ -35,8 +35,8 @@ jobs:
       run: |
         cd ${{ env.ANDROID_DIR }}
         chmod +x gradlew
-        # ./gradlew assembleRelease
-        ./gradlew assembleMyBuild --stacktrace
+        ./gradlew assembleRelease
+        #./gradlew assembleMyBuild --stacktrace
 
     - name: Upload APK
       uses: actions/upload-artifact@v3
